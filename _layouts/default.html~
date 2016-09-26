@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
    <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>EVOKE FEAR Pyriotous</title>
+   <title>{{ page.title }} {{ site.title }}</title>
 
-   <link rel="stylesheet" type="text/css" href="/css/style.css" >
+   <link rel="stylesheet" type="text/css" href="{{ site.path }}/css/style.css" >
 
    
 </head>
@@ -20,18 +18,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">Pyriotous</a>
+          <a class="navbar-brand" href="/">{{ site.title }}</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul  class="nav navbar-nav">
-             
-              <li><a href="/tshirts/">T-Shirts</a></li>
-              
-              <li><a href="/videos/">Videos</a></li>
-              
-              <li><a href="/contact/">Contact</a></li>
-                   
-            <li><a href="/blog">Blog</a></li>
+            {% for page in site.pages %} {% if page.title %}
+              <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+            {% endif %} {% endfor %}
+            <li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -39,24 +33,13 @@
 
     <div class="container">
       <div class="content">
-        <h2>EVOKE FEAR</h2>
-
-    <p>Use fearmongering as a call to action to 
-manipulate and prevent deliberation.</p>
-
-
-    
-<!--    
-
--->
-
-
+        {{ content }}
       </div>
     </div><!-- /.container -->
 
     
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-   <script src="/js/bootstrap.min.js"></script>
+   <script src="{{ site.path }}/js/bootstrap.min.js"></script>
     
 <!--<script>
 $(".nav a").on("click", function(){
