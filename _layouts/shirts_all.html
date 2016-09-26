@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<h1 class= "display-1">T-Shirts</h1>
+
+<h4>All the designs below will work on most shirt
+<font color="#009900">colors</font>.  
+Click the Buy button for any shirt to see examples on Zazzle.</h4>
+
+
+
+<div class="col-xs-12" style="height:50px;"></div>
+
+{% for item in site.shirts %}
+  <a class="anchor" id="{{ item.anchor_id }}"></a>
+  <div class="row">
+  {% for x in item.shirt_info %}
+  
+    <div class="col-md-6" style="padding-left: 0px;  padding-right:0px;">
+      <figure class="figure">
+        <figcaption class="figure-caption text-sm-right text-uppercase"><strong>shirt {{ x.name }}</strong>:</figcaption>      
+        <img src={{ x.image }} class="figure-img img-fluid img-responsive" alt="TSHIRT_IMAGE">
+      </figure>  
+    </div>
+    
+  {% endfor %}
+  </div>
+  <div class="row well">
+    <div class="container">
+      <div class="col-sm-2">
+        <a style="margin:12px" href="{{ item.zazzle_link }}" class="btn btn-primary" role="button" target="_blank">Buy this shirt</a>
+          <div class="row">
+            <p style="padding-left:25px; padding-top:10px">
+            {% include share_googleplus.html statement=item.share_statement anchor=item.anchor_id %}
+            {% include share_twitter.html statement=item.share_statement anchor=item.anchor_id %}
+            </p>
+          </div>
+      </div>
+      <div class="col-sm-8 offset-sm-1" style="padding-left:20px">
+        <p>{{ item.content }}</p>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
+  <hr class="featurette-divider">
+{% endfor %}
+
+
+

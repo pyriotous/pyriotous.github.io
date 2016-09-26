@@ -1,0 +1,27 @@
+<!--   below opens a small window
+
+<a href="https://plus.google.com/share?url={{site.baseurl}}{{ include.page_url }}&hl=en-US"
+ onclick="javascript:window.open(this.href,'',
+  'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+        <img
+            alt="..."
+            class="footer-icon"
+            width="28px"
+            src="{{ site.baseurl }}/images/icon_gplus-32.png"
+        >
+</a>
+-->
+
+<!--Below opens a new tab in foreground-->
+<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}{{ include.anchor }}" rel="nofollow" target="_blank" title="Share on Google+">
+
+    <img
+        alt="..."
+        class="footer-icon"
+        width="26px"
+        src="/images/icon_gplus-64.png"
+    >
+
+</a>
+
+

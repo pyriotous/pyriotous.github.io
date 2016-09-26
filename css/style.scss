@@ -1,0 +1,30 @@
+---
+---
+
+// add bootstrap variable settings here
+
+@import 'bootstrap';
+@import 'bootstrap/mixins/center-block';
+
+
+// add more css stuff here
+
+body {
+  padding-top: 50px;
+}
+
+.content {
+  padding: 40px 15px;
+}
+
+.centered
+{
+    text-align:center;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -45px;
+    visibility: hidden;
+}

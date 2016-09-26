@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="jumbotron text-xs-center">
+  <div class="container center-block">
+    <h1 class="jumbotron-heading">{{ page.main_title | upcase }}</h1>
+    <p>Donald Trump should Never Be President!<a class="btn" data-toggle="collapse" data-target="#viewdetails">More &raquo;</a></p>
+    <div class="collapse" id="viewdetails">
+    <p>Donald Trump is a <strong>dangerous demagogue</strong> who threatens our democracy.</p> 
+    <p><strong>Our main goal</strong> is to add to the communication and conversation around this important topic. </p>
+    </div>
+          
+  </div>
+</div>
+
+
+<div class="container marketing">
+  <div class="row centered">  
+    {% for x in page.headers %}
+      <div class="col-sm-4">
+        <div class="col-xs-12" style="height:50px;">
+        </div>
+        <a href="{{ x.link }}" class="">    
+          <img class="img-circle" src="{{ x.image }}" alt="topical icon image" width="140" height="140">
+        </a>
+        <h2>{{ x.name }}</h2>
+        <p>{{ x.caption }}</p>
+        <p><a class="btn btn-primary" href="{{ x.link }}" role="button">{{ x.btn_label }} &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    {% endfor %}
+  </div><!-- /.row -->
+</div>

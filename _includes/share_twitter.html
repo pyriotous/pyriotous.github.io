@@ -1,0 +1,32 @@
+<!--   below opens a small window
+
+<a href="https://plus.google.com/share?url={{site.baseurl}}{{ include.page_url }}&hl=en-US"
+ onclick="javascript:window.open(this.href,'',
+  'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+        <img
+            alt="..."
+            class="footer-icon"
+            width="28px"
+            src="{{ site.baseurl }}/images/icon_gplus-32.png"
+        >
+</a>
+-->
+
+
+
+
+<a href="https://twitter.com/intent/tweet?text={{ include.statement }}
+&url={{ site.url }}{{ page.url }}%23{{ include.anchor }}" 
+rel="nofollow" target="_blank" 
+title="Share on Twitter" 
+onclick="javascript:window.open(this.href,'',
+'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+
+    <img
+        alt="..."
+        class="footer-icon"
+        width="26px"
+        src="{{ site.baseurl }}/images/icon_twitter_circle.png"
+    >
+
+</a>

@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<h1 class= "display-1">Videos</h1>
+
+<h4>A few examples of Donald Trump demonstrating his demagogue methods in his own words.</h4>
+
+<div class="col-xs-12" style="height:50px;"></div>
+
+{% for item in site.vids %}
+
+  <div class="row">
+    <div class="container">
+      <h2><font color="#aa30000">{{ item.title }}</font></h2>
+      <h4 class="lead">{{ item.content }}</h4>
+    </div>
+  </div>
+
+  <div class="row">
+  {% for x in item.video_info %}
+  
+    <div class="col-xs-6" style="padding-left: 0px;  padding-right:0px;">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="{{ x.video }}"  autostart="0" autoplay="0"></iframe>
+      </div>
+    </div>
+    
+  {% endfor %}
+  </div>
+  <hr class="featurette-divider">
+{% endfor %}
+
+
+

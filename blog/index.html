@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<div class="blog-header">
+  <div class="container">
+    <h1 class="blog-title">The Pyriotous Blog</h1>
+    <p class="lead blog-description text-muted">Hope for a future without a Trump presidency.</p>
+  </div>
+</div>
+
+<hr>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          {% for post in site.posts %}
+  
+            <a class="anchor" id="{{ post.id }}"></a>
+            <div class="blog-post"  style="padding-top:10px">
+               <h2 class="blog-post-title">{{ post.title }}</h2>  
+              
+              <p class="blog-post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+              
+              <p>{{ post.content }}</p>
+              {% include share_googleplus.html statement=post.title anchor=post.id %}
+              {% include share_twitter.html statement=post.title anchor=post.id %}
+            </div> 
+            <hr>
+          {% endfor %}
+          
+        </div><!-- /.blog-main -->
+
+        
+        <div class="col-sm-3 offset-sm-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>Sometimes an issue needs a longer discussion than just a tweet.</p>
+          </div>
+          <div  data-spy = "affix" data-offset-top = "0">
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="https://twitter.com/pyriotous">Our Twitter</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Posts</h4>
+            <ol class="list-unstyled">
+              {% for post in site.posts %}
+                <li><a href="#{{ post.id }}">{{ post.title }}</a></li>
+                <!--<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>-->
+              {% endfor %}
+            </ol>
+          </div>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
