@@ -15,7 +15,7 @@ layout: default
 
       <div class="row">
 
-        <div class="col-md-8 blog-main">
+        <div class="col-sm-8 blog-main">
 
           {% for post in site.posts %}
   
@@ -35,7 +35,7 @@ layout: default
         </div><!-- /.blog-main -->
 
         
-        <div class="col-md-3 offset-md-1 blog-sidebar">
+        <div class="col-sm-3 offset-sm-1 blog-sidebar">
           <div class="sidebar-module sidebar-module-inset">
             <h4>About</h4>
             <p>Sometimes an issue needs a longer discussion than just a tweet.</p>
