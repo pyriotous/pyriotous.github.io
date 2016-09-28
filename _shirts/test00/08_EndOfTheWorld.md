@@ -17,7 +17,7 @@ shirt_info:
 
 *Some say the world will end in fire,*  
 *Some say in ice.*  
-*And from what we know of Donald Trump,*  
+*And as we know with Donald Trump,*  
 *A simple tweet may suffice.*  
 
 
