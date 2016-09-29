@@ -5,30 +5,12 @@ layout: default
 <div class="jumbotron text-md-center">
   <div class="container center-block">
     <h1 class="jumbotron-heading">{{ page.main_title | upcase }}</h1>
-    
-<!--    <p>Donald Trump should Never Be President!<a class="btn" data-toggle="collapse" data-target="#viewdetails">More &raquo;</a></p>
+    <p>Donald Trump should Never Be President!<a class="btn" data-toggle="collapse" data-target="#viewdetails">More &raquo;</a></p>
     <div class="collapse" id="viewdetails">
     <p>Donald Trump is a <strong>dangerous demagogue</strong> who threatens our democracy.</p> 
     <p><strong>Our main goal</strong> is to add to the communication and conversation around this important topic. </p>
     </div>
--->    
-    <h4>{{ page.leadin }}:</h4>
-    <div class="panel-group" id="accordion">
-      {% for x in page.details %}
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#{{ x.item }}">
-              {{ x.title }} &raquo;</a>
-            </h4>
-          </div>
-          <div id="{{ x.item }}" class="panel-collapse collapse">
-            <div class="panel-body">{{ x.more }}</div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-    
+          
   </div>
 </div>
 

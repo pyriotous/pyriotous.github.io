@@ -4,15 +4,6 @@ permalink: /
 
 main_title: Pyriotous
 
-leadin: What we are about
-details:
-  - item: one
-    title: Donald Trump is a dangerous Demagogue
-    more: A demagogue seeks support by speaking to popular desires and prejudices rather than by using rational argument. They use a range of methods to do this, and Trump uses all of these, as has been pointed out by many observers, and we talk about it here.
-  - item: two
-    title: Starting in person conversation through T-shirts
-    more: We believe that the current presidential race is the most important race of our lifetimes.  We also believe tht in person conversations are far more likely to change someone's mind than online banter. We designed our shirts to start such conversations with anti-Trump designs that are bold, inoffensive.  They invite a second look and a conversation.
-
 headers:
   - name: shirts
     link: /tshirts/
@@ -29,6 +20,8 @@ headers:
     link: /blog/
     btn_label: Read
     caption: This format allows us to develop real arguments and give reasoned explanations.  There's too little of that in the world now, so we try to avoid the name calling and let the truth prove its own power.
+  
+
 ---
 
 
