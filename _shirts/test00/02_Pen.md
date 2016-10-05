@@ -14,10 +14,9 @@ shirt_info:
 ---
 
 **Trump's Golden Pen:**
-Ah yes, the
-golden pen.  Did you know Trump often signs his name with a gold pen?
- Much like his branding tries to put a cheesy “gold” covering
+Ah yes, the golden pen.  Did you know Trump often signs his name with a [gold pen](https://www.youtube.com/watch?v=DnpO_RTSNmQ&t=6m20s)?
+ Much like his branding tries to put a cheesy "gold" covering
 over his bull$#!^, he seems to think a poorly veiled turd combined with
-superlatives like “AMAZING!” is enough to fool people.  We aren't
+superlatives like "AMAZING!" is enough to fool people.  We aren't
 fooled, and in our opinion his attempts end up looking something like
 this.
